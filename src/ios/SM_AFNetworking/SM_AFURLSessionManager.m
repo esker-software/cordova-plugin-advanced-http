@@ -513,6 +513,9 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }
 
+    configuration.URLCache = nil;
+    configuration.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+
     self.sessionConfiguration = configuration;
 
     self.operationQueue = [[NSOperationQueue alloc] init];
