@@ -12,7 +12,7 @@ Cordova / Phonegap plugin for communicating with HTTP servers.  Supports iOS, An
 
 ## Esker-Software Fork diff :
 - Add ability to store cookie in another storage : setCookieStorageImpl
-- iOS only : Disable cache from NSURLSessionConfiguration  
+- iOS only : Disable cache from [NSURLSessionConfiguration](https://developer.apple.com/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache)
 
 ## Readme from original fork
 This is a fork of [Wymsee's Cordova-HTTP plugin](https://github.com/wymsee/cordova-HTTP).
