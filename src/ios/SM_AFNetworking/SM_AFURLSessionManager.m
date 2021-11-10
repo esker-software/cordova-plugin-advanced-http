@@ -513,12 +513,6 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-    //  ESKER MODIFICATION                                                                                          //
-    //  FT-024669 - Improve the security of the iOS mobile app (appInstanceID on rooted devices)                    //
-    //  Disable caches as recommended by security pentest                                                           //
-    //  https://developer.apple.com/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache             //
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     configuration.URLCache = nil;
 
     self.sessionConfiguration = configuration;
